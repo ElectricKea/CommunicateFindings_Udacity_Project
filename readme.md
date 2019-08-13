@@ -1,5 +1,5 @@
-# (Dataset Exploration Title)
-## by (your name here)
+# Exploration of Amazon consumer products reviews
+## by Kyle McMillan
 
 
 ## Dataset
