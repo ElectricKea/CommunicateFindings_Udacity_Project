@@ -23,7 +23,10 @@ An interesting point I found was that there was a small relationship between 1 a
 helpful votes. There is also interesting relationships with vine reviewers. In both cases of, on average, vine reviews having 
 more helpful votes as well as having a longer word count.
 
-Outside of the main points of interest, I found that there are longer average word count for products in 2 star ratings. While 5 star ratings have the most overall reviews, it is also the rating with the lowest average word count for all ratings.
+Outside of the main points of interest, I found that there are longer average word count for products in 2 star ratings. While 
+5 star ratings have the most overall reviews, it is also the rating with the lowest average word count for all ratings.
+I also found that non-verified purchases are more likely to make longer reviews and at the same time, recieve more heplful 
+votes to a their review.
 
 
 ## Key Insights for Presentation
