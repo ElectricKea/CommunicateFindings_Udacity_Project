@@ -16813,6 +16813,14 @@ Since there is quite a large difference between the lower end and the upper end,
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The distribution has a long tail, when moving the graph to a log scale it is clearer to see that the distribution is unimodal at around 8-9 helpful reviews. Although the long tail stays through the log scale graph.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[29]:</div>
@@ -16860,7 +16868,7 @@ Since there is quite a large difference between the lower end and the upper end,
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[58]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#The above histogram and its bin values show that there&#39;s a long tail in the distribution, that goes out quite </span>
@@ -16903,6 +16911,14 @@ Since there is quite a large difference between the lower end and the upper end,
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The distribution has a long tail, when moving the graph to a log scale it is clearer to see that the distribution is unimodal at around 10 votes per reviews. Although the long tail stays through the log scale graph.</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -16990,6 +17006,14 @@ Value counts for helpful_votes: 1569
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We can see here that there are a lot of reviews that have a low number of words in the review. Putting the graph on a y-axis with a log scale shows how much the drop off is.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[33]:</div>
@@ -17027,6 +17051,14 @@ Value counts for helpful_votes: 1569
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Looking at the violin plot of the review body word count, we can see that the median is around 30 words and the 75th percentile has slightly under 100 words per review.</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -17119,8 +17151,8 @@ Variance: 18935.903710806728
 <div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#The above histogram and its bin values show that there&#39;s a long tail in the distribution, that goes out quite </span>
-<span class="c1">#far so I&#39;ll move it to a log scale.</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#The above histogram and its bin values show that the distribution is quite compact towards the low end, with a few points</span>
+<span class="c1">#going out towards 80,000. So I&#39;ll move it to a log scale.</span>
 <span class="n">log_binsize</span> <span class="o">=</span> <span class="mf">0.05</span>
 <span class="n">bins</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">**</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">log10</span><span class="p">(</span><span class="n">reviews_per_product</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">+</span><span class="n">log_binsize</span><span class="p">,</span> <span class="n">log_binsize</span><span class="p">)</span>
 
@@ -17159,6 +17191,14 @@ Variance: 18935.903710806728
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>In the log scale it is clear that the distrbution is unimodal and follows a gaussian distribution. It looks like, on average, products have around 100 reviews each.</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -17203,6 +17243,22 @@ Variance: 18935.903710806728
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The bar graph show the spread of how reviews over the different categories. It's interesting how the lowest amount of reviews in a category is pet products.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>I am interested in seeing if there is a trend in the reviews over time.</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -17292,21 +17348,10 @@ To register the converters:
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><p>Make sure that, after every plot or related series of plots, that you
-include a Markdown cell with comments about what you observed, and what
-you plan on investigating next.</p>
-</blockquote>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Discuss-the-distribution(s)-of-your-variable(s)-of-interest.-Were-there-any-unusual-points?-Did-you-need-to-perform-any-transformations?">Discuss the distribution(s) of your variable(s) of interest. Were there any unusual points? Did you need to perform any transformations?<a class="anchor-link" href="#Discuss-the-distribution(s)-of-your-variable(s)-of-interest.-Were-there-any-unusual-points?-Did-you-need-to-perform-any-transformations?">&#182;</a></h3><blockquote><p>Your answer here!</p>
-</blockquote>
-<h3 id="Of-the-features-you-investigated,-were-there-any-unusual-distributions?-Did-you-perform-any-operations-on-the-data-to-tidy,-adjust,-or-change-the-form-of-the-data?-If-so,-why-did-you-do-this?">Of the features you investigated, were there any unusual distributions? Did you perform any operations on the data to tidy, adjust, or change the form of the data? If so, why did you do this?<a class="anchor-link" href="#Of-the-features-you-investigated,-were-there-any-unusual-distributions?-Did-you-perform-any-operations-on-the-data-to-tidy,-adjust,-or-change-the-form-of-the-data?-If-so,-why-did-you-do-this?">&#182;</a></h3><blockquote><p>Your answer here!</p>
-</blockquote>
+<h3 id="Discuss-the-distribution(s)-of-your-variable(s)-of-interest.-Were-there-any-unusual-points?-Did-you-need-to-perform-any-transformations?">Discuss the distribution(s) of your variable(s) of interest. Were there any unusual points? Did you need to perform any transformations?<a class="anchor-link" href="#Discuss-the-distribution(s)-of-your-variable(s)-of-interest.-Were-there-any-unusual-points?-Did-you-need-to-perform-any-transformations?">&#182;</a></h3><p>Looking at the total/helpful votes as well as the word count for each review have quite a large spread in data. The star rating for the dataset is quite interesting, where a very large majority of the stars are given as 5 stars. 2 stars have the lowest amount of stars given.</p>
+<h3 id="Of-the-features-you-investigated,-were-there-any-unusual-distributions?-Did-you-perform-any-operations-on-the-data-to-tidy,-adjust,-or-change-the-form-of-the-data?-If-so,-why-did-you-do-this?">Of the features you investigated, were there any unusual distributions? Did you perform any operations on the data to tidy, adjust, or change the form of the data? If so, why did you do this?<a class="anchor-link" href="#Of-the-features-you-investigated,-were-there-any-unusual-distributions?-Did-you-perform-any-operations-on-the-data-to-tidy,-adjust,-or-change-the-form-of-the-data?-If-so,-why-did-you-do-this?">&#182;</a></h3><p>From the dataset I would have expect there to be more uniform distribution in the number reviews in each category.<br>
+In the time series graph it was interesting to note that around new year lead to a spike in reviews starting from around 2007 and this becoming very apparent from 2012.</p>
+<p>There were a number of operations taken to tidy the data, one of the major tidying the data was to remove reviews that did not parse correctly. As some reviews in the title or body contained a tab break. As a TSV seperator is a tab break, this lead to a lot of reviews being mixed in with other reviews as part of the body. In order to seperate these it would take a lot of time and since I have more than 6 million points of data, I decied to drop these.</p>
 
 </div>
 </div>
