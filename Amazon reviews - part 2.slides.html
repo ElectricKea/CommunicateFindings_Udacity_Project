@@ -13233,6 +13233,26 @@ a.anchor-link {
 </head>
 
 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<style type="text/css">
+//div.output_wrapper {
+//  margin-top: 0px;
+//}
+.input_hidden {
+  display: none;
+//  margin-top: 5px;
+}
+</style>
+
+<script>
+$(document).ready(function(){
+  $(".output_wrapper").click(function(){
+      $(this).prev('.input_hidden').slideToggle();
+  });
+})
+</script>
+
 <body>
 
 
@@ -13276,6 +13296,7 @@ that when the notebook is rendered as http slides, those cells won't show up.</p
 </div>
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
+<div class="input_hidden">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
@@ -13299,6 +13320,8 @@ that when the notebook is rendered as http slides, those cells won't show up.</p
 
     </div>
 </div>
+</div>
+
 </div>
 
 <div class="output_wrapper">
@@ -13333,6 +13356,7 @@ that when the notebook is rendered as http slides, those cells won't show up.</p
 </div>
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
+<div class="input_hidden">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
@@ -13348,6 +13372,8 @@ that when the notebook is rendered as http slides, those cells won't show up.</p
 
     </div>
 </div>
+</div>
+
 </div>
 
 <div class="output_wrapper">
@@ -13395,6 +13421,7 @@ that when the notebook is rendered as http slides, those cells won't show up.</p
 </div>
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
+<div class="input_hidden">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
@@ -13418,6 +13445,8 @@ that when the notebook is rendered as http slides, those cells won't show up.</p
 
     </div>
 </div>
+</div>
+
 </div>
 
 <div class="output_wrapper">
@@ -13453,6 +13482,7 @@ that when the notebook is rendered as http slides, those cells won't show up.</p
 </div>
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
+<div class="input_hidden">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
@@ -13475,6 +13505,8 @@ that when the notebook is rendered as http slides, those cells won't show up.</p
 
     </div>
 </div>
+</div>
+
 </div>
 
 <div class="output_wrapper">
@@ -13511,6 +13543,7 @@ Overall it would seem that a fewer number of words for 1 star ratings are also t
 </div>
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
+<div class="input_hidden">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
@@ -13542,6 +13575,8 @@ Overall it would seem that a fewer number of words for 1 star ratings are also t
 
     </div>
 </div>
+</div>
+
 </div>
 
 <div class="output_wrapper">
